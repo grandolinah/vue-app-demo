@@ -1,1 +1,1 @@
-# vue-app-demo
+# product-and-cart
