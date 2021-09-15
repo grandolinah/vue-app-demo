@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Products</title>
-    <link rel="stylesheet" href="../styles/style.min.css">
-  </head>
-  <body>
-
-    <div id="app">
-
-      <header class="top-bar spread">
-        <nav class="top-bar-nav">
-          <a href="../app.html" class="top-bar-link">
-            <i class="icofont-spoon-and-fork"></i>
-            <span>Home</span>
-          </a>
-          <a href="products.html" class="top-bar-link">
-            <span>Products</span>
-          </a>
-          <a href="past-orders.html" class="top-bar-link">
-            <span>Past Orders</span>
-          </a>
-        </nav>
-        <a href="#" class="top-bar-cart-link">
-          <i class="icofont-cart-alt icofont-1x"></i>
-          <span>Cart (0)</span>
-        </a>
-      </header>
-
-      <main class="wrapper">
+<template>
+        <main class="wrapper">
         <h1>Products</h1>
 
         <div class="card-container">
@@ -144,7 +116,7 @@
               <button class="btn btn-light">Add to cart</button>
             </div>
           </div>
-        
+
           <div class="card">
             <div class="card-title">
               Carrots
@@ -260,8 +232,13 @@
           </div>
         </div>
       </main>
+</template>
 
-    </div>
+<script>
 
-  </body>
-</html>
+export default {
+  name: 'Products',
+  components: {},
+};
+
+</script>
