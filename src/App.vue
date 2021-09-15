@@ -58,13 +58,12 @@ export default {
     },
   },
   methods: {
-    addToCart(name, index) {
+    addToCart(name, quantity) {
       if (!this.cart[name]) {
-        this.cart[name] = 0;
+        this.cart[name] = quantity;
+      } else {
+        this.cart[name] += quantity;
       }
-
-      this.cart[name] += this.inventory[index].quantity;
-      this.inventory[index].quantity = 0;
     },
     toggleSidebar() {
       this.showSidebar = !this.showSidebar;
