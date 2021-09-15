@@ -4,7 +4,7 @@
       {{ product.name }}
     </div>
     <div class="card-body">
-      <i class="icofont-10x icofont-{{product.icon}}" />
+      <i class="icofont-10x" :class="`icofont-${product.icon}`" />
       <form>
         <div class="row">
           <div class="cell">
